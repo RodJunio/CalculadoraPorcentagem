@@ -37,11 +37,13 @@
             this.txtOValor = new System.Windows.Forms.Label();
             this.txtQual = new System.Windows.Forms.Label();
             this.txtNumero2 = new System.Windows.Forms.TextBox();
-            this.txtNumero3 = new System.Windows.Forms.TextBox();
             this.txtResultadoPorcento = new System.Windows.Forms.TextBox();
             this.btnCalcular2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtNumero3 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCalcular
@@ -52,6 +54,7 @@
             this.btnCalcular.TabIndex = 0;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // txbPorcento
             // 
@@ -59,6 +62,7 @@
             this.txbPorcento.Name = "txbPorcento";
             this.txbPorcento.Size = new System.Drawing.Size(100, 23);
             this.txbPorcento.TabIndex = 1;
+            this.txbPorcento.TextChanged += new System.EventHandler(this.txbPorcento_TextChanged);
             // 
             // lbQuanto
             // 
@@ -73,7 +77,7 @@
             // lbDe
             // 
             this.lbDe.AutoSize = true;
-            this.lbDe.Location = new System.Drawing.Point(248, 91);
+            this.lbDe.Location = new System.Drawing.Point(271, 89);
             this.lbDe.Name = "lbDe";
             this.lbDe.Size = new System.Drawing.Size(20, 15);
             this.lbDe.TabIndex = 3;
@@ -81,10 +85,11 @@
             // 
             // txbNumero
             // 
-            this.txbNumero.Location = new System.Drawing.Point(274, 86);
+            this.txbNumero.Location = new System.Drawing.Point(297, 86);
             this.txbNumero.Name = "txbNumero";
             this.txbNumero.Size = new System.Drawing.Size(100, 23);
             this.txbNumero.TabIndex = 4;
+            this.txbNumero.TextChanged += new System.EventHandler(this.txbNumero_TextChanged);
             // 
             // txtResultado
             // 
@@ -92,6 +97,7 @@
             this.txtResultado.Name = "txtResultado";
             this.txtResultado.Size = new System.Drawing.Size(100, 23);
             this.txtResultado.TabIndex = 5;
+            this.txtResultado.TextChanged += new System.EventHandler(this.txtResultado_TextChanged);
             // 
             // txtOValor
             // 
@@ -117,13 +123,7 @@
             this.txtNumero2.Name = "txtNumero2";
             this.txtNumero2.Size = new System.Drawing.Size(100, 23);
             this.txtNumero2.TabIndex = 8;
-            // 
-            // txtNumero3
-            // 
-            this.txtNumero3.Location = new System.Drawing.Point(362, 206);
-            this.txtNumero3.Name = "txtNumero3";
-            this.txtNumero3.Size = new System.Drawing.Size(100, 23);
-            this.txtNumero3.TabIndex = 9;
+            this.txtNumero2.TextChanged += new System.EventHandler(this.txtNumero2_TextChanged);
             // 
             // txtResultadoPorcento
             // 
@@ -131,6 +131,7 @@
             this.txtResultadoPorcento.Name = "txtResultadoPorcento";
             this.txtResultadoPorcento.Size = new System.Drawing.Size(100, 23);
             this.txtResultadoPorcento.TabIndex = 10;
+            this.txtResultadoPorcento.TextChanged += new System.EventHandler(this.txtResultadoPorcento_TextChanged);
             // 
             // btnCalcular2
             // 
@@ -140,11 +141,12 @@
             this.btnCalcular2.TabIndex = 11;
             this.btnCalcular2.Text = "Calcular";
             this.btnCalcular2.UseVisualStyleBackColor = true;
+            this.btnCalcular2.Click += new System.EventHandler(this.btnCalcular2_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(380, 89);
+            this.label1.Location = new System.Drawing.Point(403, 89);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(12, 15);
             this.label1.TabIndex = 12;
@@ -159,12 +161,40 @@
             this.label2.TabIndex = 13;
             this.label2.Text = "?";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(248, 89);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(17, 15);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "%";
+            // 
+            // txtNumero3
+            // 
+            this.txtNumero3.Location = new System.Drawing.Point(362, 206);
+            this.txtNumero3.Name = "txtNumero3";
+            this.txtNumero3.Size = new System.Drawing.Size(100, 23);
+            this.txtNumero3.TabIndex = 9;
+            this.txtNumero3.TextChanged += new System.EventHandler(this.txtNumero3_TextChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(274, 238);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(17, 15);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "%";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCalcular2);
@@ -198,10 +228,12 @@
         private Label txtOValor;
         private Label txtQual;
         private TextBox txtNumero2;
-        private TextBox txtNumero3;
         private TextBox txtResultadoPorcento;
         private Button btnCalcular2;
         private Label label1;
         private Label label2;
+        private Label label3;
+        private TextBox txtNumero3;
+        private Label label4;
     }
 }
