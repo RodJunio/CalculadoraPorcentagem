@@ -44,6 +44,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtNumero3 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCalcular
@@ -187,12 +188,22 @@
             this.label4.TabIndex = 15;
             this.label4.Text = "%";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(83, 39);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(160, 15);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Calculadora de Porcentagem";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -235,5 +246,6 @@
         private Label label3;
         private TextBox txtNumero3;
         private Label label4;
+        private Label label5;
     }
 }
