@@ -94,7 +94,7 @@
             // 
             // txtResultado
             // 
-            this.txtResultado.Location = new System.Drawing.Point(168, 116);
+            this.txtResultado.Location = new System.Drawing.Point(161, 115);
             this.txtResultado.Name = "txtResultado";
             this.txtResultado.Size = new System.Drawing.Size(100, 23);
             this.txtResultado.TabIndex = 5;
@@ -103,7 +103,7 @@
             // txtOValor
             // 
             this.txtOValor.AutoSize = true;
-            this.txtOValor.Location = new System.Drawing.Point(70, 209);
+            this.txtOValor.Location = new System.Drawing.Point(80, 209);
             this.txtOValor.Name = "txtOValor";
             this.txtOValor.Size = new System.Drawing.Size(45, 15);
             this.txtOValor.TabIndex = 6;
@@ -112,7 +112,7 @@
             // txtQual
             // 
             this.txtQual.AutoSize = true;
-            this.txtQual.Location = new System.Drawing.Point(227, 209);
+            this.txtQual.Location = new System.Drawing.Point(237, 209);
             this.txtQual.Name = "txtQual";
             this.txtQual.Size = new System.Drawing.Size(129, 15);
             this.txtQual.TabIndex = 7;
@@ -120,7 +120,7 @@
             // 
             // txtNumero2
             // 
-            this.txtNumero2.Location = new System.Drawing.Point(121, 206);
+            this.txtNumero2.Location = new System.Drawing.Point(131, 206);
             this.txtNumero2.Name = "txtNumero2";
             this.txtNumero2.Size = new System.Drawing.Size(100, 23);
             this.txtNumero2.TabIndex = 8;
@@ -128,7 +128,7 @@
             // 
             // txtResultadoPorcento
             // 
-            this.txtResultadoPorcento.Location = new System.Drawing.Point(168, 235);
+            this.txtResultadoPorcento.Location = new System.Drawing.Point(161, 238);
             this.txtResultadoPorcento.Name = "txtResultadoPorcento";
             this.txtResultadoPorcento.Size = new System.Drawing.Size(100, 23);
             this.txtResultadoPorcento.TabIndex = 10;
@@ -136,7 +136,7 @@
             // 
             // btnCalcular2
             // 
-            this.btnCalcular2.Location = new System.Drawing.Point(80, 235);
+            this.btnCalcular2.Location = new System.Drawing.Point(83, 237);
             this.btnCalcular2.Name = "btnCalcular2";
             this.btnCalcular2.Size = new System.Drawing.Size(75, 23);
             this.btnCalcular2.TabIndex = 11;
@@ -156,7 +156,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(468, 209);
+            this.label2.Location = new System.Drawing.Point(478, 209);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(12, 15);
             this.label2.TabIndex = 13;
@@ -173,7 +173,7 @@
             // 
             // txtNumero3
             // 
-            this.txtNumero3.Location = new System.Drawing.Point(362, 206);
+            this.txtNumero3.Location = new System.Drawing.Point(372, 206);
             this.txtNumero3.Name = "txtNumero3";
             this.txtNumero3.Size = new System.Drawing.Size(100, 23);
             this.txtNumero3.TabIndex = 9;
@@ -182,7 +182,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(274, 238);
+            this.label4.Location = new System.Drawing.Point(297, 238);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(17, 15);
             this.label4.TabIndex = 15;
